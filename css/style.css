@@ -8,154 +8,22 @@
     color: black;
 }
 
-header {
+.navigasi{
+    width: 100%;
     position: fixed;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
-    height: 4rem;
-    background-color: white;
-    
 }
 
-nav{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: space-between;
-    align-items: center;
+.navigasi-menu{
+    z-index: 1020;
 }
 
-.logo {
-    margin-left: 20px;
-}
-
-.logo a{
-    text-decoration: none;
-    font-size: 25px;
-    
-}
-
-.logo h2{
-    color: rgb(165, 69, 69);
-}
-.nav-item {
-    display: flex;
-}
-
-.nav-item .nav-link{
-    margin: 0 2rem;
-    list-style-type: none;
-}
-
-.nav-item .nav-link a:hover{
+.nav-link:hover{
     color: salmon;
 }
 
-.nav-item .nav-link a{
-   
-    text-decoration: none;
-}
-
-/* main */
 .banner{
     width: 100%;
-}
+    position: absolute;
+    margin-top: 30px;
 
-.container{
-    max-width: 100%;
-    padding: 0 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.text-content{
-    max-width: 50%;
-
-}
-
-.text-content .judul{
-    font-size: 40px;
-}
-
-.poto-content{
-    max-width: 50%;
-
-}
-
-.poto-content img{
-    max-width: 100%;
-    max-height: 480px;
-}
-
-/* portofolio */
-.potofolio{
-    max-width: 100%;
-    margin-top: 50px;
-    padding: 0 25px;
-}
-
-.container-portofolio {
-    max-width: 100%;
-    text-align: center;
-}
-
-.container-portofolio p {
-    font-size: 35px;
-    font-weight: 600;
-}
-
-.portofilo-profile{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2;
-}
-.portofolio-item {
-    max-width: 200px;
-    max-height: 400px;
-    padding: 5px;
-    box-shadow: 3px;
-}
-
-.portofolio-item img {
-    width: 100%;
-    height: 100%;
-}
-
-/* blog */
-.blog{
-    margin-top: 50px;
-    padding-top: 20px 25px;
-    text-align: center;
-    max-width: 100%;
-}
-
-.blog p {
-    font-size: 40px;
-    font-weight: 500px;
-}
-
-.blog-list{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.blog-item{
-    max-width:200px;
-    max-height: 200px;
-    margin: 20px 5px;
-    padding: 5px 5px;
-    text-align: center;
-    border: solid black;
-
-}
-
-.blog-item img{
-    max-width: 100%;
-    max-height: 100%;
-    padding: 10px 10px;
-    background-size: cover;
 }

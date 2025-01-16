@@ -4,114 +4,182 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navbar 1</title>
+    <title>Ripal</title>
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./fontawesome/css/all.css">
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
   <body>
-	<header>
-		<nav class="nav">
-			<div class="logo">
-				<a href="">
-					<h2>Ripal</h2>
-				</a>
-			</div>
-			<div class="nav-menu">
-				<ul class="nav-item">
-					<li class="nav-link">
-						<a href="">Tentang Saya</a>
-					</li>
-					<li class="nav-link">
-						<a href="#portofolio">Potropolio</a>
-					</li>
-					<li class="nav-link">
-						<a href="#blog">Blog</a>
-					</li>
-					<li class="nav-link">
-						<a href="#kontak">Kontak</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</header>
-	<!-- banner -->
-	<section class="banner">
+	<!-- navbar -->
+	 <div class="container-fluid position-fixed top-0 navigasi-menu">
 		<div class="container">
-			<div class="text-content">
-				<p class="judul">I'm a Programmer Web Developer</p>
-				<p>Hallo Nama Saya Ripal Rusdiasyah, Saya Adalah Seorang Programmer Web Developer 
-					yang Menguasai HTML, CSS, JavaScript, React Js, PHP, Laravel dan MySql </p>
-					<div class="tombol">
-						<button>Kontak Saya</button>
+			<nav class="navbar navbar-expand-lg bg-white">
+				<div class="container-fluid">
+				  <a class="navbar-brand" href="#banner">Rusdiansyah</a>
+				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+					<div class="navbar-nav ms-auto">
+					  <a class="nav-link " aria-current="page" href="#">Tentang Saya</a>
+					  <a class="nav-link" href="#project">Project</a>
+					  <a class="nav-link" href="#article">Article</a>
+					  <a class="nav-link" href="#kontak">Kontak</a>
 					</div>
-			</div>
-			<div class="poto-content">
-				<img src="./asset/poto-profile.png" alt="" srcset="">
-			</div>
-		</div>
-	</section>
-	<!-- portofolio -->
-	<section class="potofolio" id="portofolio">
-		<div class="container-portofolio">
-			<p><u>Potrofolio</u></p>
-			<div class="portofilo-profile">
-				<div class="portofolio-item">
-					<img src="./asset/administrasi.jpg" alt="">
-					<a href="#">Aplikasi Administrasi Desa</a>
-					
+				  </div>
 				</div>
-				<div class="portofolio-item">
-					<img src="./asset/pengolahan-nilai.jpg" alt="">
-					<a href="#">Aplikasi Pengolahan Nilai</a>
-				</div>
-			</div>
-		</div>
-	</section>
+			   </nav>
+		</div>	
+	 </div>
+		
+	 <!--  end navbar -->
 
-	<!-- blog -->
-	 <section class="blog" id="blog">
-		<div class="container-blog">
-			<p><u>Blog</u></p>
-			<div class="blog-list">
-				<div class="blog-item">
-					<img src="./asset/html.jpg" alt="">
-					<a href="">Html</a>
+	<!-- banner -->
+	 <div class="container-fluid mt-5 pt-3" id="banner">
+		<div class="container">
+			<div class="row d-flex d-md-flex d-sm-none align-items-center justify-content-md-between">
+				<div class="col-md-8 col-sm-12  ">
+					<p class="h1">Hallo, Saya Ripal.. <br> Saya Seorang Web Developer</p>
+					<p class="p">Ingin website yang memukau dan efektif? Saya siap membantu Anda meraihnya.<br>
+						Sebagai seorang web developer yang bersemangat, saya senang mengubah ide Anda menjadi kenyataan digital yang menakjubkan</p>
+						<button class="btn btn-outline-primary">Contact me</button>
 				</div>
-				<div class="blog-item">
-					<img src="./asset/css.jpg" alt="">
-					<a href="">Css</a>
+				<div class="col-md-4 col-sm-3">
+					<img src="./asset/poto-profile.png" alt="" class="img-fluid">
 				</div>
-				<div class="blog-item">
-					<img src="./asset/js.jpg" alt="">
-					<a href="">JavaScript</a>
-				</div>
-				<div class="blog-item">
-					<img src="./asset/PHP.jpg" alt="">
-					<a href="">Php</a>
-				</div>
-				<div class="blog-item">
-					<img src="./asset/mysql.jpg" alt="">
-					<a href="">MySql</a>
-				</div>
-				<div class="blog-item">
-					<img src="./asset/laravel.jpg" alt="">
-					<a href="">Laravel</a>
-				</div>
-				<div class="blog-item">
-					<img src="./asset/React js.jpg" alt="">
-					<a href="">React Js</a>
-				</div>
-				<div class="blog-item">
-					<img src="./asset/java.jpg" alt="">
-					<a href="">Java</a>
-				</div>
+
 			</div>
+
 		</div>
-	 </section>
+	 </div>
 
-	 <!-- kontak -->
-	  <section class="kontak" id="kontak">
+	<!-- end banner -->
 
-	  </section>
+	<!-- project -->
+	 <div class="container-fluid mt-3" id="project">
+		<div class="container text-center">
+			<p class="h1 mb-3">Project</p>
+			<div class="row d-flex d-sm-none d-md-flex">
+				<!-- Administrasi Desa -->
+				<div class="card mx-1 my-1 col-sm-12" style="width: 18rem;">
+					<img src="./asset/administrasi.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+					  <h5 class="card-title">Aplikasi Administrasi Kematian</h5>
+					  <a href="#" class="btn btn-outline-primary">Pelajari Lebih Lanjut</a>
+					</div>
+				</div>
+
+				  <!-- Pengolahan Nilai -->
+
+				<div class="card mx-1 my-1 col-sm-12" style="width: 18rem;">
+					<img src="./asset/administrasi.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+					  <h5 class="card-title">Aplikasi Administrasi Kematian</h5>
+					  <a href="#" class="btn btn-outline-primary">Pelajari Lebih Lanjut</a>
+					</div>
+				</div>
+				<!-- penjualan obat -->
+
+				
+			</div>
+
+		</div>
+	 </div>
+	 <!-- end project -->
+
+	 <!-- article -->
+	  <div class="container-fluid mt-3 py-3" id="article">
+		<div class="container text-center">
+			<p class="h1">Article</p>
+			<div class="row d-flex d-md-flex d-sm-block justify-content-md-between ">
+				<!-- html -->
+				<div class="card mx-1 my-3 col-sm-12 col-md-3" style="width: 16rem;">
+					<img src="./asset/administrasi.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+					  <h5 class="card-title">Html</h5>
+					  <a href="#" class="btn btn-outline-primary ">Pelajari</a>
+					</div>
+				</div>
+
+				<!-- Css -->
+				<div class="card mx-1 my-3 col-sm-12 col-md-3" style="width: 16rem;">
+					<img src="./asset/administrasi.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+					  <h5 class="card-title">Html</h5>
+					  <a href="#" class="btn btn-outline-primary ">Pelajari</a>
+					</div>
+				</div>
+
+				<!-- Java Script -->
+				<div class="card mx-1 my-3 px-3 col-sm-12 col-md-3" style="width: 16rem;">
+					<img src="./asset/administrasi.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+					  <h5 class="card-title">Html</h5>
+					  <a href="#" class="btn btn-outline-primary ">Pelajari</a>
+					</div>
+				</div>
+
+				<!-- php -->
+				<div class="card mx-1 my-3 px-3 col-sm-12 col-md-3" style="width: 16rem;">
+					<img src="./asset/administrasi.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+					  <h5 class="card-title">Html</h5>
+					  <a href="#" class="btn btn-outline-primary ">Pelajari</a>
+					</div>
+				</div>
+
+				<!-- java -->
+				<div class="card mx-1 my-3 px-3 col-sm-12 col-md-3" style="width: 16rem;">
+					<img src="./asset/administrasi.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+					  <h5 class="card-title">Html</h5>
+					  <a href="#" class="btn btn-outline-primary ">Pelajari</a>
+					</div>
+				</div>
+
+				<!-- mysql -->
+				<div class="card mx-1 my-3 col-sm-12 col-md-3" style="width: 16rem;">
+					<img src="./asset/administrasi.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+					  <h5 class="card-title">Html</h5>
+					  <a href="#" class="btn btn-outline-primary ">Pelajari</a>
+					</div>
+				</div>
+
+				<!-- laravel -->
+				<div class="card mx-1 my-3 col-sm-12 col-md-3" style="width: 16rem;">
+					<img src="./asset/administrasi.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+					  <h5 class="card-title">Html</h5>
+					  <a href="#" class="btn btn-outline-primary ">Pelajari</a>
+					</div>
+				</div>
+
+				<!-- react -->
+				<div class="card mx-1 my-3 col-sm-12 col-md-3 " style="width: 16rem;">
+					<img src="./asset/administrasi.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+					  <h5 class="card-title">Html</h5>
+					  <a href="#" class="btn btn-outline-primary ">Pelajari</a>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- kontak saya -->
+			 <div class="container-fluid" id="kontak">
+				<div class="container text-center">
+					<p class="h1 my-3">Kontak</p>
+
+				</div>
+			 </div>
+			 <!-- end kontak saya -->
+
+		</div>
+	  </div>
+	  <!-- endarticle -->
+		
+
+	  <script src="./bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
